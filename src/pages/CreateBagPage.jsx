@@ -1,7 +1,14 @@
+import ColorsContainer from "../components/ColorsContainer"
+import BagsContainer from "../components/BagsContainer"
+import NameTag from "../components/NameTag"
+
+
 const CreateBagPage = () => {
   return (
-    <div>
-      <h1>Bags</h1>
+    <div className="main-container">
+      <BagsContainer />
+      <ColorsContainer />
+      <NameTag />
     </div>
   )
 }
