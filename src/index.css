@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap");
+/*
+FONTS:
+- HEADINGS, LINKS, BUTTONS: font-family: "Jost", sans-serif;
+- DESCRIPTIONS, PARAGRAPHS: font-family: 'Segoe UI', sans-serif;
+ */
+
+/* COLORS:
+- MAIN-BACKGROUND COLOR: #FAFAFA;
+- FONT-COLOR: #00000 (BLACK);
+- ADDDITIONAL-COLORS: #CCCCCC (PEARL), #FFFFF  (WHITE);
+
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+h1,
+h2,
+button {
+  font-family: "Jost", sans-serif;
+}
+
+p {
+  font-family: "Segoe UI", sans-serif;
+}
