@@ -1,0 +1,86 @@
+.step2 {
+  border-bottom: 1px solid rgba(195, 195, 195, 0.537);
+  border-top: 1px solid rgba(195, 195, 195, 0.537);
+  margin-bottom: 30px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+
+
+  h4 {
+    font-size: 15px;
+    font-weight: 300;
+  }
+}
+.colorscontainer {
+  display: grid;
+  grid-template-columns: 0.25fr 0.25fr 0.25fr;
+  gap: 12px;
+  width: 450px;
+  justify-content: center;
+
+
+}
+
+.color1, .color2, .color3, .color4, .color5, .color6, .color7, .color8, .color9, .color10, .color11, .color12 {
+  background-color: #94B8D9 ;
+  border-radius: 50%;
+  color: transparent;
+  width: 106px;
+  height: 106px;
+  overflow: wrap;
+  margin-left: 10px;
+
+  img {
+    display: none;
+    width: 30px;
+    height: auto;
+  }
+
+  button {
+    background-color: transparent;
+    border-style: none;
+
+  }
+}
+
+
+.color2 {
+  background-color: #ECEE94;
+}
+.color3 {
+  background-color: #BF0D1D;
+}
+.color4 {
+  background-color: #4F230B;
+}
+.color5 {
+  background-color: #0F2F18;
+}
+.color6 {
+  background-color: #D0BA91;
+}
+.color7 {
+  background-color: #BBAACC;
+}
+.color8 {
+  background-color: #000000;
+}
+.color9 {
+  background-color: #FAFAFA;
+  border: 1px solid black;
+}
+.color10 {
+  background-color: #FFE2F3;
+}
+.color11 {
+  background-color: #523C7F;
+}
+.color12 {
+  background-color: #87A35C;
+}
+
+
+
+
