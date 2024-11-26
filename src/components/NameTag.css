@@ -7,7 +7,7 @@
   padding: 8px;
   width: 100vw;
 
-  h4 {
+  h2 {
     font-size: 18px;
     font-weight: 300;
   }
@@ -19,11 +19,45 @@
   align-items: center;
   width: 100vw;
   img {
-    width: 200px;
+    width: 150px;
     padding-bottom: 50px;
     padding-top: 50px;
   }
 
+
+
+  .name-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .input-label{
+      max-width: 200px;
+    }
+
+    .input {
+      padding: 20px;
+      width: 200px;
+      border: 1px solid rgba(104, 104, 104, 0.537);
+      font-size: 20px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .price-check {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      font-size: 14px;
+      margin-top: 50px;
+    }
+
+  }
+
+  .checkbox input {
+    width: 20px;
+    height: 20px;
+  }
 
   .product-overview {
     padding: 15px;
@@ -32,7 +66,7 @@
     color: white;
     width: 280px;
     border-style: none;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 40px;
     font-size: 18px;
   }
@@ -42,37 +76,3 @@
     background-color: rgb(46, 46, 46);
   }
 }
-
-.name-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-
-  .input-label{
-    max-width: 200px;
-  }
-
-  .input {
-    padding: 20px;
-    width: 200px;
-    max-width: 200px;
-    border: 1px solid rgba(104, 104, 104, 0.537);
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .price-check {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    font-size: 16px;
-    margin-top: 10px ;
-  }
-
-}
-
-.checkbox input {
-  width: 20px;
-  height: 20px;
-}
-

@@ -5,7 +5,7 @@ const ColorsContainer = () => {
   return (
     <section>
       <div className="step2">
-        <h4>Choose up to five colors</h4>
+        <h2>Choose up to five colors</h2>
       </div>
       <div className="colorscontainer">
         <div className="color1">
