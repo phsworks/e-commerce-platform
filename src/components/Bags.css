@@ -1,47 +1,68 @@
-.bag-img-div{
+.bag-btn {
     width: 200px;
     height: 200px;
-    background-color:  #f3f3f3;
-    background-position: top;
-    background-size: 55%;
-    background-repeat: no-repeat;
-    object-fit: contain;
-    /* ADD THIS TO INDEX.CSS */
-    p{
-        font-weight: 400;
-        font-size: 18px;
-        font-family: "Jost", sans-serif;
-        text-align: center;
-        margin-top: 150px;
-    }
-    .bag-btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .bag-img-div {
         width: 100%;
         height: 100%;
-        background-color: transparent;
-        border: none;
+        background-color: #f3f3f3;
+        background-position: top;
+        background-size: 55%;
+        background-repeat: no-repeat;
+        object-fit: contain;
+
+        /* ADD THIS TO INDEX.CSS */
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            font-family: "Jost", sans-serif;
+            text-align: center;
+            margin-top: 150px;
+        }
     }
+
 }
-.batlo{
+.selected{
+    border: 1px solid #CCCCCC;
+}
+
+
+
+
+.batlo {
     background-image: url("../assets/batlo-bag.png");
 }
-.culita{
+
+.culita {
     background-image: url("../assets/culita-bag.png");
 }
-.jill{
+
+.jill {
     background-image: url("../assets/jill-bag.png");
 }
-.mini-jill{
+
+.mini-jill {
     background-image: url("../assets/mini-jill-bag.png");
 }
-.plutito{
+
+.plutito {
     background-image: url("../assets/plutito-bag.png");
 }
-.tate-petite{
+
+.tate-petite {
     background-image: url("../assets/tate-petite-bag.png");
 }
-.tatito{
+
+.tatito {
     background-image: url("../assets/tatito-bag.png");
 }
-.tatu{
+
+.tatu {
     background-image: url("../assets/tatu-bag.png");
 }
