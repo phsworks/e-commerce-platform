@@ -16,7 +16,7 @@ const NameTag = () => {
           </label>
           <span className="price-check">
             <label class="checkbox">
-              <input type="checkbox" checked="false" />
+              <input type="checkbox" checked={false} />
             </label>
             <p>Add Keychain + € 40, 00</p>
           </span>
