@@ -1,6 +1,8 @@
+import "./BagsContainer.css"
+
 const BagsContainer = () => {
   return (
-    <div>BagsContainer</div>
+    <div className="test-img">BagsContainer</div>
   )
 }
 
