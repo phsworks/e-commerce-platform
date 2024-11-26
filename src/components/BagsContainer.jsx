@@ -3,21 +3,21 @@ import "./BagsContainer.css";
 
 const BagsContainer = () => {
   const bagsNamesArray = [
-    "batlo",
-    "culita",
-    "jill",
-    "mini-jill",
-    "plutito",
-    "tate-petite",
-    "tatito",
-    "tatu",
+    "Batlo",
+    "Culita",
+    "Jill",
+    "Mini-Jill",
+    "Plutito",
+    "Tate-Petite",
+    "Tatito",
+    "Tatu",
   ];
   return (
     <>
       <section className="bags-container">
         <div className="header-first-section">
           <h2>Choose a shape</h2>
-          <div>progress bar</div>
+          <div>HERE GOES PROGRESSBAR</div>
         </div>
         <div className="bags-btn-container">
           {bagsNamesArray.map((bag, index) => {

@@ -1,9 +1,19 @@
 .header-first-section{
+    /* COMBINE THESE STYLES WITH OTHERS HEADERS' SECTIONS!!! */
     display: flex;
     width: 100dvw;
     font-size: 18px;
+    padding: 8px;
+    border-bottom: 1px solid rgba(195, 195, 195, 0.537);
+    border-top: 1px solid rgba(195, 195, 195, 0.537);
+    /* ADD THIS IN INDEX.CSS!!!! */
+    h2{
+        font-size: 18px;
+        font-weight: 300;
+    }
 }
 .bags-btn-container{
+    margin-top: 8px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
