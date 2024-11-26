@@ -1,0 +1,13 @@
+.bag-img-div{
+    border: red solid 1px;
+    width: 200px;
+    height: 200px;
+
+    .bag-img{
+        object-fit: contain;
+        height: auto;
+        width: auto;
+    }
+    
+
+}

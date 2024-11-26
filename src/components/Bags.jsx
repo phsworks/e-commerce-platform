@@ -1,9 +1,14 @@
-const Bags = () => {
-  return (
-    <div>
-      <img src="" alt="" />
-    </div>
-  )
-}
+import "./Bags.css"
 
-export default Bags
+
+const Bags = ({bag}) => {
+
+  return (
+    <div className="bag-img-div">
+      {/* show name of bag */}
+      <img src={bag} alt={bag} className="bag-img" />
+    </div>
+  );
+};
+
+export default Bags;

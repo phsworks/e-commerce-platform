@@ -1,5 +1,5 @@
 import "./NameTag.css";
-import nameBag from "../assets/namebag.png";
+
 
 const NameTag = () => {
   return (
@@ -9,7 +9,7 @@ const NameTag = () => {
         <p>3/3</p>
       </div>
       <div className="nametag">
-        <img src={nameBag} alt="name-bag" />
+        <img src="" alt="name-bag" />
         <p></p>
         <form className="name-form">
           <input className="input" type="text" />
