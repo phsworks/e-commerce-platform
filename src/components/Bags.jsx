@@ -1,6 +1,8 @@
 const Bags = () => {
   return (
-    <div>Bags</div>
+    <div>
+      <img src="" alt="" />
+    </div>
   )
 }
 
