@@ -1,27 +1,30 @@
 import "./NameTag.css";
-
+import keychain from "../assets/MietisKeychain.png";
 
 const NameTag = () => {
   return (
-    <>
+    <section>
       <div className="step3">
-        <h4>Add personalized text</h4>
-        <p>3/3</p>
+        <h2>Add a Keychain</h2>
       </div>
       <div className="nametag">
-        <img src="" alt="name-bag" />
+        <img src={keychain} alt="keychain" />
         <p></p>
         <form className="name-form">
-          <input className="input" type="text" />
+          <label className="input-label">
+            <input className="input" type="text" />
+          </label>
           <span className="price-check">
-            <input className="check" type="checkbox" />
-            <p>+ € 40, 00</p>
+            <label class="checkbox">
+              <input type="checkbox" checked="false" />
+            </label>
+            <p>Add Keychain + € 40, 00</p>
           </span>
         </form>
 
         <button className="product-overview">PRODUCT OVERVIEW</button>
       </div>
-    </>
+    </section>
   );
 };
 

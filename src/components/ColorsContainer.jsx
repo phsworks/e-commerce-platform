@@ -3,10 +3,9 @@ import icon from "../assets/FavIcon.webp";
 
 const ColorsContainer = () => {
   return (
-    <>
+    <section>
       <div className="step2">
-        <h4>Choose Three Colors</h4>
-        <p>2/3</p>
+        <h2>Choose up to five colors</h2>
       </div>
       <div className="colorscontainer">
         <div className="color1">
@@ -70,7 +69,7 @@ const ColorsContainer = () => {
           </button>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 
