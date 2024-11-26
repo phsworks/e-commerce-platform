@@ -23,8 +23,10 @@ body {
 
 h1,
 h2,
-button {
+button,
+input {
   font-family: "Jost", sans-serif;
+  font-size: 18px;
 }
 
 p {
