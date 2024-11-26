@@ -1,13 +1,39 @@
 .bag-img-div{
-    border: red solid 1px;
     width: 200px;
     height: 200px;
-
-    .bag-img{
-        object-fit: contain;
-        height: auto;
-        width: auto;
+    background-color:  #f3f3f3;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    .bag-btn{
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: none;
     }
-    
-
+}
+.batlo{
+    background-image: url("../assets/batlo-bag.png");
+}
+.culita{
+    background-image: url("../assets/culita-bag.png");
+}
+.jill{
+    background-image: url("../assets/jill-bag.png");
+}
+.mini-jill{
+    background-image: url("../assets/mini-jill-bag.png");
+}
+.plutito{
+    background-image: url("../assets/plutito-bag.png");
+}
+.tate-petite{
+    background-image: url("../assets/tate-petite-bag.png");
+}
+.tatito{
+    background-image: url("../assets/tatito-bag.png");
+}
+.tatu{
+    background-image: url("../assets/tatu-bag.png");
 }

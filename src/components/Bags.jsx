@@ -1,12 +1,9 @@
-import "./Bags.css"
+import "./Bags.css";
 
-
-const Bags = ({bag}) => {
-
+const Bags = ({ bag }) => {
   return (
-    <div className="bag-img-div">
-      {/* show name of bag */}
-      <img src={bag} alt={bag} className="bag-img" />
+    <div className={`bag-img-div ${bag}`}>
+      <button className="bag-btn"></button>
     </div>
   );
 };

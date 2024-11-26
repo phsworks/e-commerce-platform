@@ -1,0 +1,13 @@
+.header-first-section{
+    display: flex;
+    width: 100dvw;
+    font-size: 18px;
+}
+.bags-btn-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
