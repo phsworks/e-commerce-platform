@@ -5,9 +5,10 @@
   display: flex;
   justify-content: space-between;
   padding: 8px;
+  width: 100vw;
 
   h4 {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 300;
   }
 }
@@ -16,10 +17,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
   img {
-    width: 300px;
+    width: 200px;
     padding-bottom: 50px;
+    padding-top: 50px;
   }
+
+
   .product-overview {
     padding: 15px;
     background-color: black;
@@ -43,24 +48,31 @@
   flex-direction: column;
   gap: 10px;
 
+  .input-label{
+    max-width: 200px;
+  }
+
   .input {
     padding: 20px;
     width: 200px;
+    max-width: 200px;
     border: 1px solid rgba(104, 104, 104, 0.537);
     font-size: 20px;
+    text-align: center;
   }
 
   .price-check {
     display: flex;
     justify-content: center;
     gap: 10px;
-    font-size: 13px;
+    font-size: 16px;
+    margin-top: 10px ;
   }
 
-  .check {
-    border: 1px solid black;
-    border-radius: 50%;
-    color: black;
-    background-color: transparent;
 }
+
+.checkbox input {
+  width: 20px;
+  height: 20px;
 }
+
