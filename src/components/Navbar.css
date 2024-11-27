@@ -1,0 +1,29 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(220, 220, 220, 0.6);
+  padding: 10px;
+  margin-top: 5px;
+  background-color: rgba(255, 255, 255, 0.357);
+
+  img {
+    width: 150px;
+  }
+}
+
+.icons {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+
+
+  li img {
+    padding-top: 2px;
+    width: 22px;
+
+  }
+
+  .search-icon {
+    padding-top: 2px;
+  }
+}
