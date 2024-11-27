@@ -1,6 +1,10 @@
 import "./DetailsPage.css";
+import { useNavigate } from "react-router-dom";
 
 const DetailsPage = () => {
+
+  const navigate = useNavigate();
+
   return (
     <section className="details-page">
       <div className="header">
@@ -48,7 +52,7 @@ const DetailsPage = () => {
       </div>
       <div className="btns-div">
         <button className="btn cart">ADD TO CART</button>
-        <button className="btn back">BACK</button>
+        <button className="btn back" onClick={()=>{navigate(-1)}}>BACK</button>
       </div>
     </section>
   );

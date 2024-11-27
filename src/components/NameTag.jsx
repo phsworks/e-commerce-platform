@@ -1,16 +1,15 @@
 import "./NameTag.css";
 import keychain from "../assets/MietisKeychain.png";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const NameTag = () => {
-
-  const [name, setName] = useState("T.C.V.");
+  const [name, setName] = useState("T.C.V."); //SHALL WE SET THIS AS EMPTY STRING??
   const [isDisabled, setIsDisabled] = useState(true);
 
   const handleCheckChange = (e) => {
     setIsDisabled(!e.target.checked);
-  }
-
+  };
 
   const handleNameChange = (e) => {
     const value = e.target.value;
@@ -38,7 +37,7 @@ const NameTag = () => {
             />
           </label>
           <span className="price-check">
-            <label class="checkbox">
+            <label className="checkbox">
               <input
                 onChange={handleCheckChange}
                 type="checkbox"
@@ -48,8 +47,9 @@ const NameTag = () => {
             <p>Add Keychain + € 40, 00</p>
           </span>
         </form>
-
-        <button className="btn product-overview">PRODUCT OVERVIEW</button>
+        <NavLink to={"/detailspage"}>
+          <button className="btn product-overview">PRODUCT OVERVIEW</button>
+        </NavLink>
       </div>
     </section>
   );
