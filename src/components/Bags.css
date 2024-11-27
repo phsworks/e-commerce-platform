@@ -60,6 +60,8 @@
     }
 
 }
+
 .selected{
     border: 2px solid #CCCCCC;
+    /* background-size: 70%!important; DO STH ELSEEEE*/
 }

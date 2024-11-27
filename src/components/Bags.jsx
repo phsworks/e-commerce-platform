@@ -1,11 +1,15 @@
 import "./Bags.css";
 
-
-const Bags = ({ bag, selectBag }) => {
- 
+const Bags = ({ bag, setSelectedBag, selectedBag }) => {
+  console.log(selectedBag)
   return (
-    <button className="bag-btn" onClick={selectBag}>
-      <div className={`bag-img-div ${bag.toLowerCase()}`}>
+    <button
+      onClick={() => {
+        setSelectedBag(bag);
+      }}
+      className="bag-btn"
+    >
+      <div className={`bag-img-div ${bag.toLowerCase()} ${selectedBag == bag ? "selected" : ""}`}>
         <p>{bag}</p>
       </div>
     </button>
@@ -13,3 +17,6 @@ const Bags = ({ bag, selectBag }) => {
 };
 
 export default Bags;
+
+
+// + (selectedBag && " selected")

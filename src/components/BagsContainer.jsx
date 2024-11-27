@@ -1,7 +1,12 @@
+import { useState } from "react";
 import Bags from "./Bags.jsx";
 import "./BagsContainer.css";
 
 const BagsContainer = () => {
+
+  // use a contextttttttt!: 
+  
+  const [selectedBag, setSelectedBag] = useState("");
   const bagsNamesArray = [
     "Batlo",
     "Culita",
@@ -13,16 +18,6 @@ const BagsContainer = () => {
     "Tatu",
   ];
 
-
-  function selectBag() {
-
-   const bagSelected = document.querySelector(".bag-img-div");
-   bagSelected.classList.toggle("selected")
-   console.log(bagSelected)
-   
-  }
-
-
   return (
     <>
       <section className="bags-container">
@@ -31,7 +26,7 @@ const BagsContainer = () => {
         </div>
         <div className="bags-btn-container">
           {bagsNamesArray.map((bag, index) => {
-            return <Bags key={index} bag={bag} selectBag={selectBag} />;
+            return <Bags key={index} bag={bag} selectedBag={selectedBag} setSelectedBag={setSelectedBag}/>;
           })}
         </div>
       </section>
