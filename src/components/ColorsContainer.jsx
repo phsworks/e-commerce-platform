@@ -1,5 +1,5 @@
 import "./ColorsContainer.css";
-import icon from "../assets/FavIcon.webp";
+import icon from '../assets/mietis-icon.png'
 
 const ColorsContainer = () => {
   return (
@@ -9,62 +9,62 @@ const ColorsContainer = () => {
       </div>
       <div className="colorscontainer">
         <div className="color1">
-          <button>
+          <button className="color-button">
             <img src={icon} alt="Favicon" />
           </button>
         </div>
         <div className="color2">
-          <button>
+          <button className="color-button">
             <img src={icon} alt="Favicon" />
           </button>
         </div>
         <div className="color3">
-          <button>
+          <button className="color-button">
             <img src={icon} alt="Favicon" />
           </button>
         </div>
         <div className="color4">
-          <button>
+          <button className="color-button">
             <img src={icon} alt="Favicon" />
           </button>
         </div>
         <div className="color5">
-          <button>
+          <button className="color-button">
             <img src={icon} alt="Favicon" />
           </button>
         </div>
         <div className="color6">
-          <button>
+          <button className="color-button">
             <img src={icon} alt="Favicon" />
           </button>
         </div>
         <div className="color7">
-          <button>
+          <button className="color-button">
             <img src={icon} alt="Favicon" />
           </button>
         </div>
         <div className="color8">
-          <button>
+          <button className="color-button">
             <img src={icon} alt="Favicon" />
           </button>
         </div>
         <div className="color9">
-          <button>
+          <button className="color-button">
             <img src={icon} alt="Favicon" />
           </button>
         </div>
         <div className="color10">
-          <button>
+          <button className="color-button">
             <img src={icon} alt="Favicon" />
           </button>
         </div>
         <div className="color11">
-          <button>
+          <button className="color-button">
             <img src={icon} alt="Favicon" />
           </button>
         </div>
         <div className="color12">
-          <button>
+          <button className="color-button">
             <img src={icon} alt="Favicon" />
           </button>
         </div>

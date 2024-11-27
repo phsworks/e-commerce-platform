@@ -25,61 +25,102 @@
 }
 
 .color1, .color2, .color3, .color4, .color5, .color6, .color7, .color8, .color9, .color10, .color11, .color12 {
-  background-color: #94B8D9 ;
+  background-color: #94B8D9;
   border-radius: 50%;
   color: transparent;
   width: 106px;
   height: 106px;
   overflow: wrap;
   margin-left: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+
 
   img {
-    display: none;
-    width: 30px;
+    /* display: none; */
+    width: 40px;
     height: auto;
   }
 
-  button {
+  .color-button {
     background-color: transparent;
     border-style: none;
-
   }
+
 }
 
+.color1:hover {
+  background-color: #94b8d977;
+}
 
 .color2 {
   background-color: #ECEE94;
 }
+.color2:hover{
+  background-color: #ecee9475;
+}
 .color3 {
   background-color: #BF0D1D;
+}
+.color3:hover {
+  background-color: #bf0d1c75;
 }
 .color4 {
   background-color: #4F230B;
 }
+.color4:hover {
+  background-color: #4f230b85;
+}
 .color5 {
   background-color: #0F2F18;
+}
+.color5:hover {
+  background-color: #0f2f1879;
 }
 .color6 {
   background-color: #D0BA91;
 }
+.color6:hover {
+  background-color: #d0ba9181;
+}
 .color7 {
   background-color: #BBAACC;
 }
+.color7:hover {
+  background-color: #bbaacc77;
+}
 .color8 {
   background-color: #000000;
+}
+.color8:hover {
+  background-color: #0000006d;
 }
 .color9 {
   background-color: #FAFAFA;
   border: 1px solid black;
 }
+.color9:hover {
+  background-color: #ffffff8b;
+  border: 1px solid rgb(90, 90, 90);
+}
 .color10 {
   background-color: #FFE2F3;
+}
+.color10:hover {
+  background-color: #ffe2f374;
 }
 .color11 {
   background-color: #523C7F;
 }
+.color11:hover {
+  background-color: #523c7f76;
+}
 .color12 {
   background-color: #87A35C;
+}
+.color12:hover {
+  background-color: #87a35c68;
 }
 
 
