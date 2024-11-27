@@ -29,6 +29,9 @@ input {
   font-size: 18px;
 }
 
-p {
+p, small {
   font-family: "Segoe UI", sans-serif;
+}
+small{
+  color: rgb(90, 90, 90);;
 }

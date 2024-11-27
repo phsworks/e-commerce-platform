@@ -1,3 +1,35 @@
+.batlo {
+    background-image: url("../assets/batlo-bag.png");
+}
+
+.culita {
+    background-image: url("../assets/culita-bag.png");
+}
+
+.jill {
+    background-image: url("../assets/jill-bag.png");
+}
+
+.mini-jill {
+    background-image: url("../assets/mini-jill-bag.png");
+}
+
+.plutito {
+    background-image: url("../assets/plutito-bag.png");
+}
+
+.tate-petite {
+    background-image: url("../assets/tate-petite-bag.png");
+}
+
+.tatito {
+    background-image: url("../assets/tatito-bag.png");
+}
+
+.tatu {
+    background-image: url("../assets/tatu-bag.png");
+}
+
 .bag-btn {
     width: 200px;
     height: 200px;
@@ -29,40 +61,5 @@
 
 }
 .selected{
-    border: 1px solid #CCCCCC;
-}
-
-
-
-
-.batlo {
-    background-image: url("../assets/batlo-bag.png");
-}
-
-.culita {
-    background-image: url("../assets/culita-bag.png");
-}
-
-.jill {
-    background-image: url("../assets/jill-bag.png");
-}
-
-.mini-jill {
-    background-image: url("../assets/mini-jill-bag.png");
-}
-
-.plutito {
-    background-image: url("../assets/plutito-bag.png");
-}
-
-.tate-petite {
-    background-image: url("../assets/tate-petite-bag.png");
-}
-
-.tatito {
-    background-image: url("../assets/tatito-bag.png");
-}
-
-.tatu {
-    background-image: url("../assets/tatu-bag.png");
+    border: 2px solid #CCCCCC;
 }

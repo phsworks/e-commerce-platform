@@ -21,3 +21,7 @@
     gap: 5px;
 }
 
+
+.selected{
+    border: 2px solid #CCCCCC;
+}

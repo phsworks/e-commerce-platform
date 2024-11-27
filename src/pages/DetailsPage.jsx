@@ -1,3 +1,5 @@
+import "./DetailsPage.css";
+
 const DetailsPage = () => {
   return (
     <section className="details-page">
@@ -6,38 +8,48 @@ const DetailsPage = () => {
       </div>
       <div className="details-bag-container">
         {/* THIS IMAGE SHOULD BE PASSED AS PROP */}
-        <img src="../src/assets/batlo-bag.png" alt="" />
-        <p>Prefered colors</p>
-        <div className="colors-detail-container">
-          {/* ONE SPAN PER CHOSEN COLOR (mapping)*/}
-          <span></span>
-          <span></span>
-          <span></span>
+        <div className="last-details-container">
+          <img src="../src/assets/batlo-bag.png" alt="" />
+          <small>Prefered colors</small>
+          <div className="colors-detail-container">
+            {/* ONE SPAN PER CHOSEN COLOR (mapping)*/}
+            <span className="color-spot"></span>
+            <span className="color-spot"></span>
+            <span className="color-spot"></span>
+          </div>
         </div>
         <div className="price-div">
-          <p>
-            <span>Tatu by You</span> + 580,00
-          </p>
-          {/* this line below depends on the user */}
-          <p>
-            <span>Text</span> + 40,00
-          </p>
-        </div>
-        <div className="discount-section">
-          <input type="text" name="discount-input" id="discount-input" />
-          <button className="discount-btn">Apply</button>
-        </div>
-        <div className="final-price-div">
-          <div>
-            <p>Total</p>
-            <small>Including 109,33 in taxes</small>
+          <div className="line">
+            <p>Tatu by You </p>
+            <small>+ 580,00</small>
           </div>
-          <div>EUR 620,00</div>
+          <div className="line">
+            {/* this line below depends on the user */}
+            <p>Text</p>
+            <small>+40,00</small>
+          </div>
         </div>
+      </div>
+      <div className="discount-section">
+        <input
+          type="text"
+          name="discount-input"
+          id="discount-input"
+          placeholder="Discount code or Gift card"
+        />
+        <button className="discount-btn">Apply</button>
+      </div>
+      <div className="final-price-div">
+        <div id="total-text">
+          <p>Total</p>
+          <p>EUR 620,00</p>
+        </div>
+        <small>Including 109,33 in taxes</small>
+      </div>
+      <div className="btns-div">
         <button className="btn cart">ADD TO CART</button>
         <button className="btn back">BACK</button>
       </div>
-
     </section>
   );
 };

@@ -1,0 +1,137 @@
+.details-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 90vh;
+    padding-bottom: 50px;
+}
+
+.details-header {
+    /* COMBINE THESE STYLES WITH OTHERS HEADERS' SECTIONS!!! */
+    display: flex;
+    width: 100dvw;
+    font-size: 18px;
+    padding: 8px;
+    border-bottom: 1px solid rgba(195, 195, 195, 0.537);
+    border-top: 1px solid rgba(195, 195, 195, 0.537);
+
+    /* ADD THIS IN INDEX.CSS!!!! */
+    h2 {
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
+
+.details-bag-container {
+    display: flex;
+    width: 90%;
+
+    .last-details-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        width: 50%;
+
+        img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            object-position: bottom;
+        }
+
+        .colors-detail-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+
+            .color-spot {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: orange;
+            }
+        }
+    }
+
+    .price-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 50%;
+
+        .line {
+            width: 95%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.discount-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    #discount-input {
+        padding: 20px;
+        width: 250px;
+        border: 1px solid rgba(104, 104, 104, 0.537);
+        font-size: 15px;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .discount-btn {
+        padding: 20px;
+        border-radius: 10px;
+        border-color: rgba(186, 186, 186, 0.537);
+    }
+}
+
+.final-price-div {
+    width: 80%;
+
+    #total-text {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+    }
+
+}
+
+/* all buttons should have this same class */
+.btns-div {
+    text-align: center;
+
+    .btn {
+        padding: 15px;
+        background-color: black;
+        border-radius: 20px;
+        color: white;
+        width: 280px;
+        border-style: none;
+        font-size: 18px;
+        margin: 10px auto;
+    }
+
+    .btn:hover {
+        cursor: pointer;
+        background-color: rgb(46, 46, 46);
+    }
+
+    .back {
+        background-color: white;
+        color: black;
+        border: 1px solid rgb(138, 138, 138);
+    }
+}

@@ -12,6 +12,17 @@ const BagsContainer = () => {
     "Tatito",
     "Tatu",
   ];
+
+
+  function selectBag() {
+
+   const bagSelected = document.querySelector(".bag-img-div");
+   bagSelected.classList.toggle("selected")
+   console.log(bagSelected)
+   
+  }
+
+
   return (
     <>
       <section className="bags-container">
@@ -21,7 +32,7 @@ const BagsContainer = () => {
         </div>
         <div className="bags-btn-container">
           {bagsNamesArray.map((bag, index) => {
-            return <Bags key={index} bag={bag} />;
+            return <Bags key={index} bag={bag} selectBag={selectBag} />;
           })}
         </div>
       </section>
