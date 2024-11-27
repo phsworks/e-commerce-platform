@@ -4,7 +4,7 @@ import icon from '../assets/mietis-icon.png'
 const ColorsContainer = () => {
   return (
     <section>
-      <div className="step2">
+      <div className="header step2">
         <h2>Choose up to five colors</h2>
       </div>
       <div className="colorscontainer">

@@ -26,9 +26,8 @@ const BagsContainer = () => {
   return (
     <>
       <section className="bags-container">
-        <div className="header-first-section">
+        <div className="header step1">
           <h2>Choose a shape</h2>
-          <div>HERE GOES PROGRESSBAR</div>
         </div>
         <div className="bags-btn-container">
           {bagsNamesArray.map((bag, index) => {

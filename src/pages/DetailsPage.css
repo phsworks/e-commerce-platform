@@ -3,25 +3,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-
     height: 90vh;
     padding-bottom: 50px;
-}
-
-.details-header {
-    /* COMBINE THESE STYLES WITH OTHERS HEADERS' SECTIONS!!! */
-    display: flex;
-    width: 100dvw;
-    font-size: 18px;
-    padding: 8px;
-    border-bottom: 1px solid rgba(195, 195, 195, 0.537);
-    border-top: 1px solid rgba(195, 195, 195, 0.537);
-
-    /* ADD THIS IN INDEX.CSS!!!! */
-    h2 {
-        font-size: 18px;
-        font-weight: 300;
-    }
 }
 
 .details-bag-container {
@@ -81,14 +64,13 @@
     align-items: center;
     gap: 10px;
 
-    #discount-input {
-        padding: 20px;
-        width: 250px;
-        border: 1px solid rgba(104, 104, 104, 0.537);
-        font-size: 15px;
-        text-align: center;
-        border-radius: 10px;
-    }
+    .discount-input {
+
+     width: 250px;
+     text-transform: none;
+     border-radius: 10px;
+     font-size: 15px;
+ }
 
     .discount-btn {
         padding: 20px;

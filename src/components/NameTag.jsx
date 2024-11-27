@@ -19,7 +19,7 @@ const NameTag = () => {
 
   return (
     <section>
-      <div className="step3">
+      <div className="header step3">
         <h2>Add a Keychain</h2>
       </div>
       <div className="nametag">
@@ -49,7 +49,7 @@ const NameTag = () => {
           </span>
         </form>
 
-        <button className="product-overview">PRODUCT OVERVIEW</button>
+        <button className="btn product-overview">PRODUCT OVERVIEW</button>
       </div>
     </section>
   );

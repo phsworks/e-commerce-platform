@@ -3,7 +3,7 @@ import "./DetailsPage.css";
 const DetailsPage = () => {
   return (
     <section className="details-page">
-      <div className="details-header">
+      <div className="header">
         <h2>Product Overview</h2>
       </div>
       <div className="details-bag-container">
@@ -34,7 +34,7 @@ const DetailsPage = () => {
         <input
           type="text"
           name="discount-input"
-          id="discount-input"
+          className="input discount-input"
           placeholder="Discount code or Gift card"
         />
         <button className="discount-btn">Apply</button>
