@@ -4,10 +4,12 @@ import HomePage from "./pages/HomePage.jsx";
 import DetailsPage from "./pages/DetailsPage.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
 import CreateBagPage from "./pages/CreateBagPage.jsx";
+import Navbar from "./components/Navbar.jsx";
 
 function App() {
   return (
     <>
+    <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/detailspage" element={<DetailsPage />} />
