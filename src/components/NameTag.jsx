@@ -24,7 +24,7 @@ const NameTag = () => {
       </div>
       <div className="nametag">
         <div className="name-input">
-          <p>{name.substring(0, 8)}</p>
+          <p>{name.substring(0, 5)}</p>
           <img src={keychain} alt="keychain" />
         </div>
         <form className="name-form">
