@@ -33,7 +33,7 @@ const NameTag = () => {
               onChange={handleNameChange}
               className="input"
               type="text"
-              value={name.substring(0, 8)}
+              value={name.substring(0, 5)}
               disabled={isDisabled}
             />
           </label>
