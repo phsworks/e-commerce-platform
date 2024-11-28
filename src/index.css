@@ -51,7 +51,6 @@ small {
 .header {
   border-bottom: 1px solid rgba(195, 195, 195, 0.537);
   border-top: 1px solid rgba(195, 195, 195, 0.537);
-  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   padding: 8px;
