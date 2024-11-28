@@ -1,7 +1,7 @@
 import "./Bags.css";
 
 const Bags = ({ bag, setSelectedBag, selectedBag }) => {
-  console.log(selectedBag)
+
   return (
     <button
       onClick={() => {

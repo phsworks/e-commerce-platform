@@ -1,9 +1,19 @@
-const Colors = () => {
+import icon from "../assets/mietis-icon.png";
+
+const Colors = ({ color, colorSelection, setColorSelection, addColor }) => {
   return (
-    <div>
+    <button
+      onClick={() => {
+        setColorSelection(color);
+        addColor()
+      }}
+      className="color-button"
+    >
+      <div className={color}>
+        <img src={icon} alt="Favicon" className={colorSelection === color ? "selected-color" : ""} />
+      </div>
+    </button>
+  );
+};
 
-    </div>
-  )
-}
-
-export default Colors
+export default Colors;
