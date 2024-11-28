@@ -5,8 +5,6 @@ const HomePage = () => {
     <div>
       <NavLink to="/createbag">createbag</NavLink>
       <NavLink to="/detailspage">detailspage</NavLink>
-      <NavLink to="/">Home</NavLink>
-
       <h1>Home</h1>
 
     </div>

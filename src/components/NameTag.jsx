@@ -3,12 +3,14 @@ import keychain from "../assets/MietisKeychain.png";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-const NameTag = () => {
-  const [name, setName] = useState("T.C.V."); //SHALL WE SET THIS AS EMPTY STRING??
-  const [isDisabled, setIsDisabled] = useState(true);
+const NameTag = ({ isDisabled, setIsDisabled }) => {
+  const [name, setName] = useState("T.C.V.");
 
   const handleCheckChange = (e) => {
     setIsDisabled(!e.target.checked);
+    if (isDisabled) {
+      alert("Keychain added!");
+    }
   };
 
   const handleNameChange = (e) => {

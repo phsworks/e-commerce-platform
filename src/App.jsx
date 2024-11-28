@@ -9,7 +9,8 @@ import { useState } from "react";
 
 function App() {
   const [selectedBag, setSelectedBag] = useState("");
-  
+  const [isDisabled, setIsDisabled] = useState(true);
+
   return (
     <>
       <Navbar />
@@ -17,7 +18,9 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route
           path="/detailspage"
-          element={<DetailsPage selectedBag={selectedBag} />}
+          element={
+            <DetailsPage selectedBag={selectedBag} isDisabled={isDisabled} />
+          }
         />
         <Route
           path="/createbag"
@@ -25,6 +28,8 @@ function App() {
             <CreateBagPage
               selectedBag={selectedBag}
               setSelectedBag={setSelectedBag}
+              isDisabled={isDisabled}
+              setIsDisabled={setIsDisabled}
             />
           }
         />
