@@ -10,45 +10,44 @@ npm .details-page {
 
 .details-bag-container {
     display: flex;
-    width: 95%;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    justify-content: space-between;
+    gap: 30px;
+    padding-left: 10px;
 
-    .last-details-container {
+    .bag-img {
+        height: 250px;
+        width: 250px;
+        background-color: #f3f3f3;
+        background-position: bottom;
+        background-size: 70%;
+        background-repeat: no-repeat;
+        object-fit: contain;
+    }
+
+    .colors-detail-container {
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
-        align-items: center;
-        gap: 10px;
-        width: 50%;
+        align-items: start;
+        width: 200px;
 
-        img {
-            height: 180px;
-            width: 100%;
-            object-fit: cover;
-            object-position: bottom;
-        }
-
-        .colors-detail-container {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            width: 80%;
-
-            .color-spot {
-                display: inline-block;
-                width: 30px;
-                height: 30px;
-                border-radius: 50%;
-                background-color: orange;
-            }
+        .color-spot {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: orange;
         }
     }
 
     .price-div {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: start;
         justify-content: center;
-        gap: 10px;
+        gap: 30px;
         width: 50%;
 
         .line {
@@ -64,16 +63,16 @@ npm .details-page {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin: 20px auto;
+    margin: 30px auto;
 
     .discount-input {
 
-     width: 250px;
-     text-transform: none;
-     border-radius: 10px;
-     font-size: 15px;
-     padding: 17px;
- }
+        width: 220px;
+        text-transform: none;
+        border-radius: 10px;
+        font-size: 15px;
+        padding: 17px;
+    }
 
     .discount-btn {
         padding: 15px;
@@ -84,7 +83,7 @@ npm .details-page {
 
 .final-price-div {
     width: 90%;
-    margin: 10px auto 20px;
+    margin: 20px auto 30px;
 
     #total-text {
         display: flex;
@@ -101,11 +100,11 @@ npm .details-page {
     text-align: center;
 
     .btn {
-        padding: 15px;
+        padding: 10px;
         background-color: black;
         border-radius: 20px;
         color: white;
-        width: 280px;
+        width: 250px;
         border-style: none;
         font-size: 18px;
         margin: 10px auto;

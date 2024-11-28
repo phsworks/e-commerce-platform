@@ -1,8 +1,7 @@
 import "./DetailsPage.css";
 import { useNavigate } from "react-router-dom";
 
-const DetailsPage = () => {
-
+const DetailsPage = ({selectedBag}) => {
   const navigate = useNavigate();
 
   return (
@@ -12,25 +11,24 @@ const DetailsPage = () => {
       </div>
       <div className="details-bag-container">
         {/* THIS IMAGE SHOULD BE PASSED AS PROP */}
-        <div className="last-details-container">
-          <img src="../src/assets/batlo-bag.png" alt="" />
-          <small>Prefered colors</small>
-          <div className="colors-detail-container">
-            {/* ONE SPAN PER CHOSEN COLOR (mapping)*/}
-            <span className="color-spot"></span>
-            <span className="color-spot"></span>
-            <span className="color-spot"></span>
-          </div>
+
+        <div className={`bag-img ${selectedBag.toLowerCase()}`}></div>
+        <p>Prefered colors</p>
+        <div className="colors-detail-container">
+          {/* ONE SPAN PER CHOSEN COLOR (mapping)*/}
+          <span className="color-spot"></span>
+          <span className="color-spot"></span>
+          <span className="color-spot"></span>
         </div>
         <div className="price-div">
           <div className="line">
             <p>Tatu by You </p>
-            <small>+ 580,00</small>
+            <small>+ € 580,00</small>
           </div>
           <div className="line">
             {/* this line below depends on the user */}
             <p>Text</p>
-            <small>+40,00</small>
+            <small>+ € 40,00</small>
           </div>
         </div>
       </div>
@@ -46,13 +44,20 @@ const DetailsPage = () => {
       <div className="final-price-div">
         <div id="total-text">
           <p>Total</p>
-          <p>EUR 620,00</p>
+          <p>EUR € 620,00</p>
         </div>
-        <small>Including 109,33 in taxes</small>
+        <small>Including € 109,33 in taxes</small>
       </div>
       <div className="btns-div">
         <button className="btn cart">ADD TO CART</button>
-        <button className="btn back" onClick={()=>{navigate(-1)}}>BACK</button>
+        <button
+          className="btn back"
+          onClick={() => {
+            navigate(-1);
+          }}
+        >
+          BACK
+        </button>
       </div>
     </section>
   );

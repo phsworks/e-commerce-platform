@@ -1,12 +1,13 @@
-import { useState } from "react";
+
 import Bags from "./Bags.jsx";
 import "./BagsContainer.css";
 
-const BagsContainer = () => {
+const BagsContainer = ({selectedBag, setSelectedBag}) => {
 
   // use a contextttttttt!: 
   
-  const [selectedBag, setSelectedBag] = useState("");
+  
+
   const bagsNamesArray = [
     "Batlo",
     "Culita",
