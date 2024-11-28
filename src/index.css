@@ -33,11 +33,13 @@ h2 {
   font-size: 18px;
   font-weight: 300;
   text-align: left;
+  color: black;
 }
 
 p,
-small {
+small, strong {
   font-family: "Segoe UI", sans-serif;
+  color: black;
 }
 
 small {

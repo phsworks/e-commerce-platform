@@ -18,11 +18,12 @@ npm .details-page {
     padding-left: 10px;
 
     .bag-img {
+        align-self: center;
         height: 250px;
-        width: 250px;
+        width: 100%;
         background-color: #f3f3f3;
         background-position: bottom;
-        background-size: 70%;
+        background-size: 50%;
         background-repeat: no-repeat;
         object-fit: contain;
     }
@@ -31,7 +32,7 @@ npm .details-page {
         display: flex;
         justify-content: space-between;
         align-items: start;
-        width: 200px;
+        width: 150px;
 
         .color-spot {
             display: inline-block;
@@ -121,8 +122,12 @@ npm .details-page {
         color: black;
         border: 1px solid rgb(138, 138, 138);
     }
+    .back:hover{
+        background-color: rgb(187, 187, 187);;
+    }
 }
 
+/* image of bag selected */
 
 .batlo {
     background-image: url("../assets/batlo-bag.png");

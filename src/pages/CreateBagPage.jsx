@@ -1,24 +1,29 @@
-import ColorsContainer from "../components/ColorsContainer"
-import BagsContainer from "../components/BagsContainer"
-import NameTag from "../components/NameTag"
+import ColorsContainer from "../components/ColorsContainer";
+import BagsContainer from "../components/BagsContainer";
+import NameTag from "../components/NameTag";
 
-
-
-const CreateBagPage = ({selectedBag, setSelectedBag, colorsSelectionArray, setColorsSelectionArray}) => {
-
+const CreateBagPage = ({
+  selectedBag,
+  setSelectedBag,
+  isDisabled,
+  setIsDisabled,
+}) => {
   return (
     <div className="main-container">
       <BagsContainer
+
         selectedBag={selectedBag}
+
         setSelectedBag={setSelectedBag}
+  
       />
       <ColorsContainer
         colorsSelectionArray={colorsSelectionArray}
         setColorsSelectionArray={setColorsSelectionArray}
       />
-      <NameTag />
+      <NameTag isDisabled={isDisabled} setIsDisabled={setIsDisabled} />
     </div>
-  );
-}
+  );;
+};
 
-export default CreateBagPage
+export default CreateBagPage;

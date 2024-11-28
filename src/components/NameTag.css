@@ -15,8 +15,10 @@
     font-size: 20px;
     text-transform: uppercase;
     position: absolute;
+    left: 0;
     margin-top: 250px;
-    padding-left: 57px;
+    width: 100%;
+    text-align: center;
   }
 
   .name-form {

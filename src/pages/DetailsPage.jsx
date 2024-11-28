@@ -1,7 +1,7 @@
 import "./DetailsPage.css";
 import { useNavigate } from "react-router-dom";
 
-const DetailsPage = ({ selectedBag, colorsSelectionArray }) => {
+const DetailsPage = ({  selectedBag, isDisabled , colorsSelectionArray }) => {
   const navigate = useNavigate();
 
   return (
@@ -10,8 +10,6 @@ const DetailsPage = ({ selectedBag, colorsSelectionArray }) => {
         <h2>Product Overview</h2>
       </div>
       <div className="details-bag-container">
-        {/* THIS IMAGE SHOULD BE PASSED AS PROP */}
-
         <div className={`bag-img ${selectedBag.toLowerCase()}`}></div>
         <p>Prefered colors</p>
         <div className="colors-detail-container">
@@ -27,11 +25,12 @@ const DetailsPage = ({ selectedBag, colorsSelectionArray }) => {
             <p>Tatu by You </p>
             <small>+ € 580,00</small>
           </div>
-          <div className="line">
-            {/* this line below depends on the user */}
-            <p>Text</p>
-            <small>+ € 40,00</small>
-          </div>
+          {!isDisabled && (
+            <div className="line">
+              <p>Keychain</p>
+              <small>+ € 40,00</small>
+            </div>
+          )}
         </div>
       </div>
       <div className="discount-section">
@@ -41,17 +40,17 @@ const DetailsPage = ({ selectedBag, colorsSelectionArray }) => {
           className="input discount-input"
           placeholder="Discount code or Gift card"
         />
-        <button className="discount-btn">Apply</button>
+        <button onClick={()=>{alert("Discount not found")}}className="discount-btn">Apply</button>
       </div>
       <div className="final-price-div">
         <div id="total-text">
           <p>Total</p>
-          <p>EUR € 620,00</p>
+          <strong>EUR € {!isDisabled ? "620,00" : "580,00"}</strong>
         </div>
         <small>Including € 109,33 in taxes</small>
       </div>
       <div className="btns-div">
-        <button className="btn cart">ADD TO CART</button>
+        <button className="btn cart" onClick={()=>{alert("Thank you!")}}>ADD TO CART</button>
         <button
           className="btn back"
           onClick={() => {
