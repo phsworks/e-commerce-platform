@@ -31,14 +31,16 @@
 }
 
 .bag-btn {
-    width: 200px;
-    height: 200px;
+    width: 190px;
+    height: 190px;
     background-color: transparent;
     border: none;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    
 
     .bag-img-div {
         width: 100%;
@@ -59,9 +61,18 @@
         }
     }
 
-}
+    .selected{
+        border: 2px solid #CCCCCC;
+        background-color: #ffff;
+        background-position-y: -50%;
+        background-size: 65%;
+        p{
+            font-weight: 500;
+        }
+    }
 
-.selected{
-    border: 2px solid #CCCCCC;
-    /* background-size: 70%!important; DO STH ELSEEEE*/
+}
+.bag-btn:hover{
+    box-shadow: 1px 1px 5px#9c9c9c;
+
 }
