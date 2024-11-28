@@ -5,16 +5,30 @@ import DetailsPage from "./pages/DetailsPage.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
 import CreateBagPage from "./pages/CreateBagPage.jsx";
 import Navbar from "./components/Navbar.jsx";
+import { useState } from "react";
 
 function App() {
+  const [selectedBag, setSelectedBag] = useState("");
+  
   return (
     <>
-    <Navbar />
+      <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/detailspage" element={<DetailsPage />} />
-        <Route path="/createbag" element={<CreateBagPage />} />
-        <Route path="*" element={<ErrorPage/>}/>
+        <Route
+          path="/detailspage"
+          element={<DetailsPage selectedBag={selectedBag} />}
+        />
+        <Route
+          path="/createbag"
+          element={
+            <CreateBagPage
+              selectedBag={selectedBag}
+              setSelectedBag={setSelectedBag}
+            />
+          }
+        />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </>
   );

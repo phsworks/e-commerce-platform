@@ -3,10 +3,12 @@ import BagsContainer from "../components/BagsContainer"
 import NameTag from "../components/NameTag"
 
 
-const CreateBagPage = () => {
+
+const CreateBagPage = ({selectedBag, setSelectedBag}) => {
+
   return (
     <div className="main-container">
-      <BagsContainer />
+      <BagsContainer selectedBag={selectedBag} setSelectedBag={setSelectedBag}/>
       <ColorsContainer />
       <NameTag />
     </div>
