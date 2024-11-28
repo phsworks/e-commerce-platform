@@ -1,19 +1,13 @@
 import icon from "../assets/mietis-icon.png";
-
-const Colors = ({ color, colorSelection, setColorSelection, addColor }) => {
+const Colors = ({ color, isSelected, toggleColor }) => {
   return (
-    <button
-      onClick={() => {
-        setColorSelection(color);
-        addColor()
-      }}
-      className="color-button"
-    >
+    <button onClick={() => toggleColor(color)} className="color-button">
       <div className={color}>
-        <img src={icon} alt="Favicon" className={colorSelection === color ? "selected-color" : ""} />
+        {isSelected && (
+          <img src={icon} alt="Favicon" className="selected-color" />
+        )}
       </div>
     </button>
   );
 };
-
 export default Colors;

@@ -4,15 +4,21 @@ import NameTag from "../components/NameTag"
 
 
 
-const CreateBagPage = ({selectedBag, setSelectedBag}) => {
+const CreateBagPage = ({selectedBag, setSelectedBag, colorsSelectionArray, setColorsSelectionArray}) => {
 
   return (
     <div className="main-container">
-      <BagsContainer selectedBag={selectedBag} setSelectedBag={setSelectedBag}/>
-      <ColorsContainer />
+      <BagsContainer
+        selectedBag={selectedBag}
+        setSelectedBag={setSelectedBag}
+      />
+      <ColorsContainer
+        colorsSelectionArray={colorsSelectionArray}
+        setColorsSelectionArray={setColorsSelectionArray}
+      />
       <NameTag />
     </div>
-  )
+  );
 }
 
 export default CreateBagPage

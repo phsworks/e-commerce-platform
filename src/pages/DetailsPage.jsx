@@ -1,7 +1,7 @@
 import "./DetailsPage.css";
 import { useNavigate } from "react-router-dom";
 
-const DetailsPage = ({selectedBag}) => {
+const DetailsPage = ({ selectedBag, colorsSelectionArray }) => {
   const navigate = useNavigate();
 
   return (
@@ -16,9 +16,11 @@ const DetailsPage = ({selectedBag}) => {
         <p>Prefered colors</p>
         <div className="colors-detail-container">
           {/* ONE SPAN PER CHOSEN COLOR (mapping)*/}
-          <span className="color-spot"></span>
-          <span className="color-spot"></span>
-          <span className="color-spot"></span>
+
+          {colorsSelectionArray.map((selectedcolor, index) => {
+            return <span key={index} className={`color-spot ${selectedcolor}`}></span>
+          })}
+
         </div>
         <div className="price-div">
           <div className="line">

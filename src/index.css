@@ -65,6 +65,8 @@ small {
   border-style: none;
   font-size: 18px;
   margin: 10px auto;
+  display: flex;
+  justify-content: center;
 }
 
 .btn:hover {

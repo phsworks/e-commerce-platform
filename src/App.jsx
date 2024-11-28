@@ -9,7 +9,9 @@ import { useState } from "react";
 
 function App() {
   const [selectedBag, setSelectedBag] = useState("");
-  
+  const [colorsSelectionArray, setColorsSelectionArray] = useState([]);
+
+
   return (
     <>
       <Navbar />
@@ -17,7 +19,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route
           path="/detailspage"
-          element={<DetailsPage selectedBag={selectedBag} />}
+          element={<DetailsPage selectedBag={selectedBag} colorsSelectionArray= {colorsSelectionArray} />}
         />
         <Route
           path="/createbag"
@@ -25,6 +27,8 @@ function App() {
             <CreateBagPage
               selectedBag={selectedBag}
               setSelectedBag={setSelectedBag}
+              colorsSelectionArray = {colorsSelectionArray}
+              setColorsSelectionArray = {setColorsSelectionArray}
             />
           }
         />

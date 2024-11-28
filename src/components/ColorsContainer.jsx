@@ -1,20 +1,7 @@
 import "./ColorsContainer.css";
 import Colors from "./Colors";
 import { useState } from "react";
-
-const ColorsContainer = () => {
-  const [colorSelection, setColorSelection] = useState("");
-  const [colorsSelectionArray, setColorsSelectionArray] = useState([]);
-
-
-// fix this
-  function addColor(){
-    if (colorsSelectionArray.length >= 0 && colorsSelectionArray.length <= 4){
-      colorsSelectionArray.push(colorSelection);
-      console.log(colorsSelectionArray)
-    }
-
-  }
+const ColorsContainer = ({colorsSelectionArray, setColorsSelectionArray}) => {
 
   const colorsArray = [
     "color1",
@@ -30,19 +17,32 @@ const ColorsContainer = () => {
     "color11",
     "color12",
   ];
+  const toggleColor = (color) => {
+    if (colorsSelectionArray.includes(color)) {
+      const newArray = colorsSelectionArray.filter((item) => item !== color);
+      setColorsSelectionArray(newArray);
+    } else if (colorsSelectionArray.length < 3) {
+      const newArray = [...colorsSelectionArray, color];
+      setColorsSelectionArray(newArray);
 
+    }
+  };
   return (
     <section>
       <div className="header step2">
         <h2>Choose three colors</h2>
       </div>
       <div className="colorscontainer">
-        {colorsArray.map((color, index) => {
-          return <Colors key={index} color={color} colorSelection={colorSelection} setColorSelection={setColorSelection} addColor={addColor}/>;
-        })}
+        {colorsArray.map((color, index) => (
+          <Colors
+            key={index}
+            color={color}
+            isSelected={colorsSelectionArray.includes(color)}
+            toggleColor={toggleColor}
+          />
+        ))}
       </div>
     </section>
   );
 };
-
 export default ColorsContainer;

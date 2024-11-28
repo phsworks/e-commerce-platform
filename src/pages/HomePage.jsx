@@ -1,16 +1,19 @@
-import { NavLink } from "react-router-dom"
+import "./HomePage.css";
+
+import { NavLink } from "react-router-dom";
 
 const HomePage = () => {
   return (
-    <div>
-      <NavLink to="/createbag">createbag</NavLink>
-      <NavLink to="/detailspage">detailspage</NavLink>
-      <NavLink to="/">Home</NavLink>
+    <section className="home">
+      <div className="homepage">
+      </div>
+      <div className="start">
+        <NavLink to="/createbag">
+          <button className="btn">LET'S GET STARTED</button>
+        </NavLink>
+      </div>
+    </section>
+  );
+};
 
-      <h1>Home</h1>
-
-    </div>
-  )
-}
-
-export default HomePage
+export default HomePage;
