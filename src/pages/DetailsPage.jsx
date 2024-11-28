@@ -44,7 +44,7 @@ const DetailsPage = ({selectedBag}) => {
       <div className="final-price-div">
         <div id="total-text">
           <p>Total</p>
-          <p>EUR € 620,00</p>
+          <strong>EUR € 620,00</strong>
         </div>
         <small>Including € 109,33 in taxes</small>
       </div>

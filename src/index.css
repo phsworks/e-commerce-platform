@@ -35,8 +35,12 @@ h2 {
   text-align: left;
 }
 
+h2.post-title a{
+  color: #000;
+}
+
 p,
-small {
+small, strong {
   font-family: "Segoe UI", sans-serif;
 }
 
