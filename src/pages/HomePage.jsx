@@ -4,17 +4,12 @@ import { NavLink } from "react-router-dom";
 
 const HomePage = () => {
   return (
-    <section className="home">
-      <div className="homepage">
-      </div>
-      <div className="start">
-        <NavLink to="/createbag">
-          <button className="btn">LET'S GET STARTED</button>
-        </NavLink>
-      </div>
+    <section className="homepage">
+      <NavLink to="/createbag">
+        <button className="btn start-btn">LET'S GET STARTED</button>
+      </NavLink>
     </section>
   );
 };
 
 export default HomePage;
-
