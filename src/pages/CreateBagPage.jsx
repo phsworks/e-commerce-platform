@@ -7,6 +7,8 @@ const CreateBagPage = ({
   setSelectedBag,
   isDisabled,
   setIsDisabled,
+  colorsSelectionArray, 
+  setColorsSelectionArray
 }) => {
   return (
     <div className="main-container">
