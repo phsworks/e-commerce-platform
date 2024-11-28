@@ -8,9 +8,10 @@
 
   .start-btn {
     position: absolute;
-    top: 80%;
+    top: 90%;
     left: 50%;
     transform: translateX(-50%);
+    margin-bottom: 50px;
   }
 
 
