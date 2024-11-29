@@ -9,10 +9,9 @@
 }
 .start-btn {
   position: absolute;
-  top: 98%;
+  top: 92%;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 100px;
   margin-bottom: 20px;
 }
 
