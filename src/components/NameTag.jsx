@@ -25,7 +25,7 @@ const NameTag = ({ isDisabled, setIsDisabled }) => {
       </div>
       <div className="nametag">
         <div className="name-input">
-          <p>{name.substring(0, 5)}</p>
+          <p>{name.substring(0, 6)}</p>
           <img src={keychain} alt="keychain" />
         </div>
         <form className="name-form">
@@ -34,7 +34,7 @@ const NameTag = ({ isDisabled, setIsDisabled }) => {
               onChange={handleNameChange}
               className="input"
               type="text"
-              value={name.substring(0, 5)}
+              value={name.substring(0, 6)}
               disabled={isDisabled}
             />
           </label>
