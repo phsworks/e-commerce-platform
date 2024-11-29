@@ -9,7 +9,7 @@
 
   .start-btn {
     position: absolute;
-    top: 85%;
+    top: 80%;
     left: 50%;
     transform: translateX(-50%);
   }

@@ -1,6 +1,6 @@
 import "./ColorsContainer.css";
 import Colors from "./Colors";
-import { useState } from "react";
+
 const ColorsContainer = ({colorsSelectionArray, setColorsSelectionArray}) => {
 
   const colorsArray = [
@@ -17,6 +17,7 @@ const ColorsContainer = ({colorsSelectionArray, setColorsSelectionArray}) => {
     "color11",
     "color12",
   ];
+
   const toggleColor = (color) => {
     if (colorsSelectionArray.includes(color)) {
       const newArray = colorsSelectionArray.filter((item) => item !== color);
@@ -27,6 +28,7 @@ const ColorsContainer = ({colorsSelectionArray, setColorsSelectionArray}) => {
 
     }
   };
+  
   return (
     <section>
       <div className="header step2">
