@@ -5,5 +5,6 @@ const Checkout = () => {
     </div>
   )
 }
+// I think this component is not being used, so you can delete it.
 
 export default Checkout

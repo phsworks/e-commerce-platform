@@ -36,7 +36,13 @@ const NameTag = ({ isDisabled, setIsDisabled }) => {
               type="text"
               value={name.substring(0, 6)}
               disabled={isDisabled}
-            />
+              />
+              {/*
+                The substring method is modifying the original string in the state.
+                This behavior is not recommended because it can lead to bugs.
+                You can use the substring method in the handleChange function
+                Or you can add an attribute maxLength="6" to the input field
+              */}
           </label>
           <span className="price-check">
             <label className="checkbox">

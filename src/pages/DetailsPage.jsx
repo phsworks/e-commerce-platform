@@ -11,6 +11,21 @@ const DetailsPage = ({  selectedBag, isDisabled , colorsSelectionArray }) => {
       </div>
       <div className="details-bag-container">
         <div className={`bag-img ${selectedBag.toLowerCase()}`}></div>
+
+        {/*
+        // Maybe you can just add the image as an img tag instead of
+        a div. 
+        We use background-image in CSS when we want to add an image
+        as a background of an element, but if the image is the main
+        content of the element, we can use an img tag.
+        Then you can probably avoid having a different class for each bag.
+        EXAMPLE:
+         <img
+          className="bag-img"
+          src={`/assets/${selectedBag.toLowerCase()}-bag.png`}
+          alt={`${selectedBag} bag`}
+        />
+        */ }
         <p>Prefered colors</p>
         <div className="colors-detail-container">
           {/* ONE SPAN PER CHOSEN COLOR (mapping)*/}
