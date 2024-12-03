@@ -16,6 +16,26 @@ const Navbar = () => {
         <img src={logo} alt="logo" />
       </NavLink>
       <ul className="icons">
+        {/*
+        To render multiple elements that share the same structure, you can use an array of objects
+        and map over it to render the elements.
+
+        EXAMPLE:
+        const icons = [
+          { src: search, alt: "search-icon" },
+          { src: cart, alt: "cart-icon" },
+          { src: heart, alt: "heart-icon" },
+          { src: hamburger, alt: "hamburger-icon" }
+        ];
+
+        <ul className="icons">
+          {icons.map((icon, index) => (
+            <li key={index}>
+              <img src={icon.src} alt={icon.alt} onClick={()=>{setHidden(!hidden)}} />
+            </li>
+          ))}
+        </ul>
+        */}
         <li className="search-icon">
           <img src={search} alt="search-icon" onClick={()=>{setHidden(!hidden)}}/>
         </li>

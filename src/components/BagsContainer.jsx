@@ -4,7 +4,7 @@ import "./BagsContainer.css";
 
 const BagsContainer = ({selectedBag, setSelectedBag}) => {
 
-  // use a contextttttttt!: 
+  // use a contextttttttt!: hahaha nice
   
   
 
