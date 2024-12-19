@@ -3,7 +3,7 @@
   grid-template-columns: 0.25fr 0.25fr 0.25fr;
   gap: 12px;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   margin-top: 30px;
   margin-bottom: 30px;
 

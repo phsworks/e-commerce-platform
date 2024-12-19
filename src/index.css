@@ -54,7 +54,7 @@ small {
   display: flex;
   justify-content: space-between;
   padding: 8px;
-  width: 100vw;
+  width: 100%;
 
 }
 
@@ -83,4 +83,14 @@ small {
   font-size: 20px;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (width > 450px) {
+  #root{
+    max-width: 450px;
+    margin: 0 auto;
+    .homepage{
+      width: 100%;
+    }
+  }
 }

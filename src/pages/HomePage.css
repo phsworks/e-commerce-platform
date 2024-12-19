@@ -1,17 +1,16 @@
-.homepage {
-  background-image: url('../assets/Background-Home.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100%;
-  position: absolute;
+.homepage-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding-bottom: 20px;
+  .homepage {
+    background-image: url('../assets/Background-Home.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: relative;
 
+  }
 }
-.start-btn {
-  position: absolute;
-  top: 92%;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 20px;
-}
-
